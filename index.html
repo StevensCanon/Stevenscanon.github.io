@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>LISTA DE COMPRAS</title>
+</head>
+<body>
+  <header>
+    <h1>MI LISTA DE COMPRAS</h1>
+    <nav>
+      <ul class="Navegacion">
+        <li><a href="https://colanta.com/sabe-mas/">Ir a distribuidora de leche</a></li>
+        <li><a href="https://distribuidoradehuevos.com.co/">Ir a distribuidora de Huevos</a></li>
+        <li><a href="https://distrilabendicion.com/es-CO/catalogo/cereales.php?sub_category=91">Ir a distribuidora de Cereal</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <ul class="lista">
+      <li><a href="paginas/Manzanas.html">Manzanas</a></li>
+      <li><a target="_self" href="paginas/Leche.html">Leche</a></li>
+      <li><a href="paginas/Pan.html">Pan</a></li>
+      <li><a target="_self" href="paginas/Huevos.html">Huevos</a></li>
+      <li><a target="_self" href="paginas/Cereal.html">Cereal</a></li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+      </tr>
+      <tr>
+        <td>Leche</td>
+        <td>1500</td>
+      </tr>
+      <tr>
+        <td>Huevos</td>
+        <td>759</td>
+      </tr>
+      <tr>
+        <td>Manzanas</td>
+        <td>1785</td>
+      </tr>
+      <tr>
+        <td>Cereal</td>
+        <td>588</td>
+        <tr>
+          <td>Pan</td>
+          <td>Al por Mayor</td>
+        </tr>
+    </table>
+
+    <h1 class="index">DEJANOS TU OPINION:</h1>
+    <form action="procesar.php" method="POST">
+      <label for="Nombre">Nombre:</label>
+      <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="Mensaje">Mensaje:</label>
+      <textarea id="Mensaje" name="Mensaje"></textarea><br>
+
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="date"><br>
+
+      <label for="Genero">Seleccione su género:</label><br>
+      <label for="Genero">Femenino</label>
+      <input type="radio" id="GeneroFemenino" name="Genero"><br>
+      <label for="Genero">Masculino</label>
+      <input type="radio" id="GeneroMasculino" name="Genero"><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <h3>&copy; 2023 Elian Stevens Cañon</h3>
+  </footer>
+</body>
+</html>
